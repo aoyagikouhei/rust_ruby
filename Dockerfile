@@ -7,3 +7,8 @@ RUN mv /bin/sh /bin/sh_tmp && ln -s /bin/bash /bin/sh
 RUN apt-get update && \
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
   source $HOME/.cargo/env
+
+ENV CARGO_TARGET_DIR /tmp/target
+
+VOLUME /tmp/target
+VOLUME /usr/local/cargo/registry
