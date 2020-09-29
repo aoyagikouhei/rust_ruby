@@ -19,5 +19,6 @@ fn try_it(s: &str) -> String {
 fn main() {
     VM::init();
 
-    println!("{}", try_it("予定表～①💖ﾊﾝｶｸだ"));
+    println!("{}", try_it("apples"));
+
 }

@@ -9,6 +9,8 @@ RUN apt-get update && \
   source $HOME/.cargo/env
 
 ENV CARGO_TARGET_DIR /tmp/target
+ENV LD_LIBRARY_PATH /usr/local/lib
+ENV USER root
 
 VOLUME /tmp/target
 VOLUME /usr/local/cargo/registry
